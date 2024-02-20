@@ -88,6 +88,7 @@ a {
   display: flex;
   align-items: center;
   gap: 76px;
+  position: relative;
 }
 
 
@@ -134,10 +135,6 @@ a {
 .navigation:hover,
 .navigation:focus {
   color: #404bbf;
-}
-
-.navigation-li {
-  position: relative;
 }
 
 .nav-line {
@@ -497,6 +494,7 @@ fill: #F4F4FD;
  
   padding-top: 100px ;
   padding-bottom: 100px;
+  margin-right: 120px
   
 }
 
@@ -532,7 +530,6 @@ fill: #F4F4FD;
 .footer-container{
   display: flex;
   align-items: baseline;
-  margin-right: 120px 
   
 }
 
