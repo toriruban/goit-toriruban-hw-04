@@ -73,7 +73,10 @@ a {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
+
 
 .header .logo,
 .header .link,
@@ -114,6 +117,7 @@ a {
 .page-nav-menu {
   display: flex;
   gap: 40px;
+  color: #404bbf;
 }
 
 
@@ -124,6 +128,8 @@ a {
   line-height: 24px;
   letter-spacing: 0.32px;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--color-blue);
 
   position: relative;
   
@@ -173,6 +179,8 @@ a {
   background-color:#2E2F42;
   padding-top: 188px;
   padding-bottom: 188px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(
     to bottom,
     rgba(46, 47, 66, 0.70),
@@ -182,6 +190,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
 }
 
 .hero-container .container{
@@ -215,12 +224,14 @@ a {
   height: 56px;
   border: none;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
 
 }
 
 .custom-button-class:hover,
 .custom-button-class:focus {
   background-color: #404BBF;
+
 }
 
 
@@ -248,6 +259,7 @@ a {
   border: 1px solid  #8E8F99;
   justify-content: center;
   align-items: center;
+  margin-bottom: 8px;
 }
 
 
@@ -290,6 +302,7 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
 }
 
@@ -322,6 +335,7 @@ a {
   flex-wrap: wrap;
   gap: 24px;
   border-bottom: 1px solid #E7E9FC;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-container li{
@@ -337,31 +351,35 @@ a {
   text-align: center;
 }
 
-.icons{
+.icons-team{
   display: flex;
   gap: 24px;
   margin-top: 8px;
+  justify-content: center
 }
 
 .icons-app{
-width: 40px;
-height: 40px;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #4D5AE5;
-border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4D5AE5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .icons-app:hover{
-  transition: 250m cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #404BBF;
-
+  background-color:#404BBF;
 }
+
 .icon-team{
 width: 16px;
 height: 16px;
+fill: #F4F4FD;
 }
+
 
 /* Section 4  */
 .work-portfolio{
@@ -387,6 +405,11 @@ height: 16px;
 
 .about-portfolio{
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-portfolio:hover{
+  box-shadow: зі значенням 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 
 .product-classification{
@@ -412,7 +435,6 @@ height: 16px;
    
 }
 
-
 .pop-out-portfolio{
   position: relative;
   overflow: hidden;
@@ -429,8 +451,9 @@ height: 16px;
   background:  #4D5AE5;
   color:  #F4F4FD;
   transform:translateY(100%);
-  transition:transform 250ms ease-in-out;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
+  
 
 
 
@@ -480,11 +503,13 @@ height: 16px;
 .footer-link{
   display: inline-block;
   margin-bottom: 16px;
+  margin-right: 120px;
 }
 
 .footer-container{
   display: flex;
   align-items: baseline;
+  
 }
 
 .footer-heading{
@@ -502,28 +527,29 @@ height: 16px;
 }
 
 .icons-link{
-  background-color:#4D5AE5;
-  border-radius: 50px;
-  padding: 8px;
+  justify-content: center;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
-  justify-content: center;
-  display: flex;
   align-items: center;
-  
+  display: flex;
+  background:#4D5AE5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social{
   margin-left: 120px;
 }
 
-.icons-link:hover{
+.icons-link:hover,
+.icons-link:focus{
   background-color:#31D0AA;
-  transition: 250m cubic-bezier(0.4, 0, 0.2, 1);
-}
+  
 
+}
 
 .footer-icon{
   width: 24px;
   height: 24px;
+  fill:#F4F4FD;
 }
