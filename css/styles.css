@@ -72,6 +72,7 @@ a {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
 }
 
 .header-container {
@@ -117,6 +118,7 @@ a {
   display: flex;
   gap: 40px;
   align-items: center;
+  position: relative;
 }
 
 .navigation {
@@ -151,7 +153,7 @@ a {
 .nav-line::after {
   position: absolute;
   content: "";
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   position: absolute;
   transform: translateY(19%);
@@ -159,6 +161,7 @@ a {
   border-radius: 2px;
   height: 4px;
   width: 100%;
+ 
 }
 
 .navigation .nav-line {
@@ -390,7 +393,8 @@ a {
 }
 
 
-.icons-app:hover{
+.icons-app:hover,
+.icons-app:focus{
   background-color:#404BBF;
 }
 
@@ -429,7 +433,7 @@ fill: #F4F4FD;
 }
 
 .about-portfolio:hover{
-  box-shadow: зі значенням 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+  box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 
 .product-classification{
@@ -529,6 +533,7 @@ fill: #F4F4FD;
 .footer-container{
   display: flex;
   align-items: baseline;
+  margin-right: 120px 
   
 }
 
